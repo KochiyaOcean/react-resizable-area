@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
-    sourceMapFilename: "[file].map",
+    sourceMapFilename: '[file].map',
     libraryTarget: 'umd',
     library: 'ReactResizeableArea',
   },
@@ -15,14 +15,14 @@ module.exports = {
       'commonjs': 'react',
       'commonjs2': 'react',
       'amd': 'react',
-      'root': 'React'
+      'root': 'React',
     },
     'react-dom': {
       'commonjs': 'react-dom',
       'commonjs2': 'react-dom',
       'amd': 'react-dom',
-      'root': 'ReactDOM'
-    }
+      'root': 'ReactDOM',
+    },
   },
   module: {
     rules: [
@@ -30,10 +30,10 @@ module.exports = {
         test: /\.(js)$/,
         exclude: /node_modules/,
         use: 'babel-loader?cacheDirectory=true',
-      }
-    ]
+      },
+    ],
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin()
+    new webpack.optimize.UglifyJsPlugin(),
   ],
 }
