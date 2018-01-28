@@ -1,7 +1,7 @@
 {
   "name": "react-resizable-area",
   "version": "0.2.0",
-  "description": "Create A resizable component with percentage width/height support",
+  "description": "Create a resizable component with percentage width/height support",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,6 +10,19 @@
   "author": {
     "name": "KochiyaOcean",
     "email": "root@kochiyaocean.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KochiyaOcean/react-resizable-area.git"
+  },
+  "keywords": [
+    "React",
+    "Resizable",
+    "Percent",
+    "Percentage"
+  ],
+  "bugs": {
+    "url": "https://github.com/KochiyaOcean/react-resizable-area/issues"
   },
   "license": "MIT",
   "devDependencies": {
