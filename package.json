@@ -1,6 +1,6 @@
 {
   "name": "react-resizable-area",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Create A resizable component with percentage width/height support",
   "main": "dist/index.js",
   "scripts": {
