@@ -19,6 +19,8 @@ class Main extends React.Component {
         minimumWidth: { px: 0, percent: 50 },
         initHeight: { px: 0, percent: 80 },
         initWidth: { px: 0, percent: 80 },
+        defaultHeight: { px: 0, percent: 75 },
+        defaultWidth: { px: 0, percent: 75 },
         maximumHeight: { px: 0, percent: 100 },
         maximumWidth: { px: 0, percent: 100 },
         parentContainer: document.querySelector('.resizable-container')
@@ -36,6 +38,8 @@ class Main extends React.Component {
             minimumWidth: { px: 0, percent: 10 },
             initHeight: { px: 20, percent: 50 },
             initWidth: { px: 20, percent: 50 },
+            defaultHeight: { px: 20, percent: 50 },
+            defaultWidth: { px: 20, percent: 50 },
             maximumHeight: { px: 0, percent: 80 },
             maximumWidth: { px: 0, percent: 80 },
             parentContainer: this.state.container
