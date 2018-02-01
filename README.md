@@ -65,6 +65,12 @@ ReactDOM.render(
 )
 ```
 
+## Methods
+
+### `setSize: { width: { px: number, percent: number }, height: { px: number, percent: number } }`
+
+Set size of component directly
+
 ## Props
 
 ### `id: string`
