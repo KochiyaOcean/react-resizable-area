@@ -1,39 +1,39 @@
 const path = require('path')
-const webpack = require('webpack')
 
 module.exports = {
-  entry: './lib/index.js',
+  mode: 'production',
+  entry: './lib/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
-    sourceMapFilename: '[file].map',
     libraryTarget: 'umd',
-    library: 'ReactResizeableArea',
+    library: 'ReactResizableArea',
+    globalObject: 'this',
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
   },
   externals: {
-    'react': {
-      'commonjs': 'react',
-      'commonjs2': 'react',
-      'amd': 'react',
-      'root': 'React',
+    react: {
+      commonjs: 'react',
+      commonjs2: 'react',
+      amd: 'react',
+      root: 'React',
     },
     'react-dom': {
-      'commonjs': 'react-dom',
-      'commonjs2': 'react-dom',
-      'amd': 'react-dom',
-      'root': 'ReactDOM',
+      commonjs: 'react-dom',
+      commonjs2: 'react-dom',
+      amd: 'react-dom',
+      root: 'ReactDOM',
     },
   },
   module: {
     rules: [
       {
-        test: /\.(js)$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
-        use: 'babel-loader?cacheDirectory=true',
+        use: 'ts-loader',
       },
     ],
   },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin(),
-  ],
 }
